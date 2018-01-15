@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MyDao"
+  id="myeclipse.1474810942872"
+  context-root="/MyDao"
+  j2ee-spec="5.0"
+  archive="MyDao.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

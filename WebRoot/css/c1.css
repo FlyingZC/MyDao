@@ -1,0 +1,26 @@
+p{
+	background-color:silver;
+}
+
+body{
+	//background-color:black;
+}
+//1.元素选择器
+p{
+	color:blue;
+}
+
+//2.类选择器
+h3.important{
+	background-color:silver;
+}
+
+//3.id选择器
+#d{
+	color:red;
+}
+
+//4.选择器组
+.important,div{
+	font-size:50px;
+}

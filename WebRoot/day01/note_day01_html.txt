@@ -1,0 +1,72 @@
+1.html(1.5天)
+勾勒出网页的结构和内容
+html(HyperText Markup Language):超文本表级语言
+xml:可扩展标签语言(自定义):标签,属性,嵌套关系均可以自定义
+双标签:<student></student>
+单标签:<student/>
+属性:<student id="1" name="zs"></student>
+内容:<student>内容</student>
+元素:<student id="1">内容</student>
+
+网页存储在服务器上
+网页运行在浏览器上
+
+html
+语法固定(w3c)
+用来显示数据
+某些特定版本的html就严格满足xml语法规范
+可以将html理解为标签固定的xml
+
+补充
+1.w3c中文官方网站
+www.w3cschool.com.cn
+Dream(html)
+HBuilder(js)
+
+新建maven web工程
+new maven project->选择war
+
+右键点击Deployment Descriptor->选择Generate
+Resource '/ZC05WebBasic/src/main/webapp/WEB-INF/web.xml' does not exist.
+
+web文件放在src->webapp下
+
+tomcat cannot publish 缺少environment,删了重新导入eclipse
+
+端口号占用
+netstat -ano
+
+netstat -ano|findstr "8080"	:查看8080端口
+
+作业:
+lol-百度百科案例
+1.将网页分为三个区域(div)
+2.将3个区域的宽度设置为60,并让他们居中
+<div style="
+border:1px solid red;
+width:960px;
+margin:0 auto;
+"></div>
+
+3.footer
+<div>里<p align="center"></p>
+<u>:下划线
+<b>:加粗
+
+table
+ol+ul
+游戏背景链接
+
+
+
+
+
+
+2.css(3天)
+美化页面
+
+3.JavaScript(4天)
+让网页呈现动态数据和效果
+
+4.jQuery(1.5天)
+框架,提高js的开发效率

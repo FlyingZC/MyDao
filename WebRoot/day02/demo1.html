@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 2.内部样式 -->
+<style type="text/css">
+	h2{
+		color:red;
+	}
+	#d{
+		color:green;
+	}
+	<!--4.选择器组-->
+	.important,div{
+		font-size:50px;
+	}
+	
+	<!--派生选择器(1)后代选择器,(2)子元素选择器-->
+	p strong{
+		color:red;
+	}
+	p>strong{
+		font-size:10px;
+	}
+	<!--伪类选择器-->
+	a:link{
+		color:blue;//未访问
+	}
+	a:visited{
+		color:red;//已访问
+	}
+	.btn:active{
+		background-color:blue;//被激活
+	}
+	#d2:hover{
+		background-color:silver;//鼠标悬停
+	}
+	.txt:focus{
+		background-color:blue;//获取焦点
+	}
+</style>
+<!-- 3.外部样式 -->
+<link type="text/css" rel="stylesheet" href="../css/c1.css"></style>
+</head>
+<body>
+<!-- 1.内联样式 -->
+<h1 style="color:blue;">内联样式</h1>
+<h2 >使用内部样式</h2>
+<p>使用外部样式表</p>
+
+<!-- 
+	css规则特性
+	继承性:
+	层叠性:
+	优先级:
+ -->
+ <!-- css选择器 -->
+ <!-- 1.元素选择器 -->
+ <!-- 2.类选择器 -->
+ <h3 class="important">类选择器文本</h3>
+ <!-- 3.id选择器 -->
+ <div id="d">分区1</div>
+ 
+ <div class="important">选择器组</div>
+
+<p>
+	<strong>p的子strong元素</strong>
+	<ul><strong>p的子strong元素</strong></ul>
+</p>
+
+<a href="#">百度</a>
+
+<input type="button" value="active按钮" class="btn"/>
+<br/>
+<div id="d2">分区2鼠标悬停</div>
+<br/>
+<input type="text" class="txt" value="focus"/>
+</body>
+</html>

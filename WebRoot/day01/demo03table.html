@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.mhead{
+		height:50px;
+	}
+	.odd{
+		background-color:rgb(0,200,0);
+		color:white;
+	}
+	.even{
+		background-color:rgb(0,0,200);
+		color:white;
+	}
+</style>
+</head>
+<body>
+<!-- 表格默认不显示框 	cellspacing:单元格之间的间距	cellpadding:单元格的内边距
+	width:占整个网页的宽度	用css居中
+	重点!!!!均是用于td的属性
+	colspan:跨列(从左向右跨,会把之后的列向右推)和	rowspan:跨行(由上向下跨)
+-->
+	<table border="1" cellpadding="1" cellspacing="0" width="30%">
+	<thead>
+		<tr class="mhead odd">
+			<th>编号</th>
+			<th>名称</th>
+			<th>金额</th>
+			<th>合计</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="mbody even">
+			<td colspan="2">一</td>
+			<td>三</td>
+			<td>四</td>
+		</tr>
+		<tr class="mbody odd">
+			<td rowspan="2">一</td>
+			<td>二</td>
+			<td>三</td>
+			<td>四</td>
+		</tr>
+		<tr class="mbody even">
+			<td>一</td>
+			<td>二</td>
+			<td>三</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr class="mfoot odd">
+			<td colspan="2">结果</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tfoot>
+	</table>
+</body>
+</html>
